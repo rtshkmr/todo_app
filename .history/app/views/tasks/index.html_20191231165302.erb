@@ -1,0 +1,14 @@
+<h1>All Tasks</h1>
+
+
+<p>Find me at app/views/tasks/index.html.erb </p>
+<ul id="tasks">
+  <% @tasks.each do |task| %>
+    <li>
+      <%#= task.title %>
+      <%= link_to task.title, task_path(task),
+            clas: 'task.title', id: "task_#{task}"
+            class %>
+    </li>
+  <% end %>
+</ul>

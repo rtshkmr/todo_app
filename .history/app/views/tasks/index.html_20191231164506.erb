@@ -1,0 +1,11 @@
+<h1>All Tasks</h1>
+
+
+<p>Find me at </p>
+<ul id="tasks">
+  <% @tasks.each do |task| %>
+    <li>
+      <%= task.title %>
+    </li>
+  <% end %>
+</ul>

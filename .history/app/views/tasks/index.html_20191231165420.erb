@@ -1,0 +1,16 @@
+<h1>All Tasks</h1>
+
+
+<p>Find me at app/views/tasks/index.html.erb </p>
+<ul id="tasks">
+  <% @tasks.each do |task| %>
+    <li>
+      <%#= task.title %>
+      <%= link_to task.title, task_path(task),
+            class: "task.title", id: "task_#{task.id}" %>
+    </li>
+  <% end %>
+</ul>
+
+
+<%= link_to "Create a New Task", new_article_path, class: "new_article" %>
