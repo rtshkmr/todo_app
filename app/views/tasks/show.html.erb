@@ -1,5 +1,17 @@
 <h1><%= @task.title %></h1>
+
+<p>
+  Tags:
+  <% @task.tags.each do |tag| %>
+    <%= link_to tag.name, tag_path(tag) %>
+  <% end %>
+</p>
+
+
 <p><%= @task.body %></p>
+
+
+
 <%= link_to "edit", edit_task_path(@task)%>
 <%= link_to "delete", task_path(@task), method: :delete, data: {confirm: "Really delete the task?"}
  %>

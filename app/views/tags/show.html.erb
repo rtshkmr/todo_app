@@ -1,0 +1,7 @@
+<h1>Tasks Tagged with <%= @tag.name %></h1>
+
+<ul>
+  <% @tag.tasks.each do |task| %>
+    <li><%= link_to task.title, task_path(task) %></li>
+  <% end %>
+</ul>
