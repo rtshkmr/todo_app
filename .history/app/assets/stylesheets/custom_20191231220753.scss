@@ -1,4 +1,4 @@
-@import "bootstrap-sprockets";
+    @import "bootstrap-sprockets";
 @import "bootstrap";
 
 /* universal */
@@ -38,7 +38,7 @@ h6 {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 1em;
     letter-spacing: -2px;
     margin-bottom: 30px;
     text-align: center;
@@ -76,4 +76,3 @@ p {
 #logo:hover {
     color: #fff;
     text-decoration: none;
-}
