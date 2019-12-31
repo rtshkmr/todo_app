@@ -1,0 +1,23 @@
+<h1>Create a New Article</h1>
+<p>Find me in app/views/tasks/new.html.erb</p>
+
+
+<%= form_for(@task) do |f| %>
+  <ul>
+  <% @task.errors.full_messages.each do |error| %>
+    <li><%= error %></li>
+  <% end %>
+  </ul>
+  <p>
+    <%# label creates HTML label %>
+    <%= f.label :title puts "hello?"%><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
